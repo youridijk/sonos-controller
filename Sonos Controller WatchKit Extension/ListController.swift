@@ -7,8 +7,6 @@
 
 import WatchKit
 import Foundation
-//import Alamofire
-import SwiftyXMLParser
 
 var didDiscover = false
 

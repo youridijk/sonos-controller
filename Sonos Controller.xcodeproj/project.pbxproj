@@ -15,11 +15,10 @@
 		C741AD06259A5E9B00795B2B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C741AD05259A5E9B00795B2B /* ExtensionDelegate.swift */; };
 		C741AD08259A5E9B00795B2B /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C741AD07259A5E9B00795B2B /* ComplicationController.swift */; };
 		C741AD0A259A5E9D00795B2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C741AD09259A5E9D00795B2B /* Assets.xcassets */; };
-		C741AD5F259A6D9E00795B2B /* SwiftyXMLParser in Frameworks */ = {isa = PBXBuildFile; productRef = C741AD5E259A6D9E00795B2B /* SwiftyXMLParser */; };
 		C741AD64259A857300795B2B /* ControlsVC OLD.swift in Sources */ = {isa = PBXBuildFile; fileRef = C741AD63259A857300795B2B /* ControlsVC OLD.swift */; };
-		C76417EE259D13B700034408 /* helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76417ED259D13B700034408 /* helper.swift */; };
+		C75AB7A527B808F300CC0D4B /* Socket in Frameworks */ = {isa = PBXBuildFile; productRef = C75AB7A427B808F300CC0D4B /* Socket */; };
+		C76417EE259D13B700034408 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76417ED259D13B700034408 /* Helper.swift */; };
 		C787C0FC25A0D8A100EFF907 /* SonosUPnPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C787C0FB25A0D8A100EFF907 /* SonosUPnPClient.swift */; };
-		C7910AD9263B396800FA3F86 /* Socket in Frameworks */ = {isa = PBXBuildFile; productRef = C7910AD8263B396800FA3F86 /* Socket */; };
 		C7AD3DBE25E2841500FED5C8 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD3DBD25E2841500FED5C8 /* Errors.swift */; };
 		C7AD3DC325E2897600FED5C8 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD3DC225E2897600FED5C8 /* Service.swift */; };
 		C7AD3DC825E292BB00FED5C8 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD3DC725E292BB00FED5C8 /* Helper.swift */; };
@@ -87,7 +86,6 @@
 
 /* Begin PBXFileReference section */
 		C72569E825A2581A003E48FE /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
-		C72B0758263F505000B81B71 /* Sonos Controller WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Sonos Controller WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		C741ACEB259A5E9500795B2B /* Sonos Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sonos Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C741ACEF259A5E9600795B2B /* Sonos Controller WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sonos Controller WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C741ACF5259A5E9600795B2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -99,7 +97,7 @@
 		C741AD09259A5E9D00795B2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C741AD0B259A5E9D00795B2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C741AD63259A857300795B2B /* ControlsVC OLD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControlsVC OLD.swift"; sourceTree = "<group>"; };
-		C76417ED259D13B700034408 /* helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helper.swift; sourceTree = "<group>"; };
+		C76417ED259D13B700034408 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		C787C0FB25A0D8A100EFF907 /* SonosUPnPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonosUPnPClient.swift; sourceTree = "<group>"; };
 		C7AD3DBD25E2841500FED5C8 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		C7AD3DC225E2897600FED5C8 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
@@ -133,8 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7910AD9263B396800FA3F86 /* Socket in Frameworks */,
-				C741AD5F259A6D9E00795B2B /* SwiftyXMLParser in Frameworks */,
+				C75AB7A527B808F300CC0D4B /* Socket in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,13 +171,12 @@
 		C741AD02259A5E9B00795B2B /* Sonos Controller WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				C7E8F3D6279EE1BA00436127 /* xml tet */,
-				C72B0758263F505000B81B71 /* Sonos Controller WatchKit Extension.entitlements */,
+				C7E8F3D6279EE1BA00436127 /* xml test */,
 				C7F4434C25D6D92F001E045A /* client */,
 				C7AD5F692637045300710810 /* ListController.swift */,
 				C741AD63259A857300795B2B /* ControlsVC OLD.swift */,
 				C7AD5F6E2637065700710810 /* ControlsVC.swift */,
-				C76417ED259D13B700034408 /* helper.swift */,
+				C76417ED259D13B700034408 /* Helper.swift */,
 				C72569E825A2581A003E48FE /* Test.swift */,
 				C741AD05259A5E9B00795B2B /* ExtensionDelegate.swift */,
 				C741AD07259A5E9B00795B2B /* ComplicationController.swift */,
@@ -197,14 +193,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C7E8F3D6279EE1BA00436127 /* xml tet */ = {
+		C7E8F3D6279EE1BA00436127 /* xml test */ = {
 			isa = PBXGroup;
 			children = (
 				C7E8F3DC279EE1F900436127 /* CustomXMLParser.swift */,
 				C7E8F3DE279EE38400436127 /* XMLElement.swift */,
 				C7DC5A2F27B026F100EED85C /* TestController.swift */,
 			);
-			path = "xml tet";
+			path = "xml test";
 			sourceTree = "<group>";
 		};
 		C7F4434C25D6D92F001E045A /* client */ = {
@@ -277,8 +273,7 @@
 			);
 			name = "Sonos Controller WatchKit Extension";
 			packageProductDependencies = (
-				C741AD5E259A6D9E00795B2B /* SwiftyXMLParser */,
-				C7910AD8263B396800FA3F86 /* Socket */,
+				C75AB7A427B808F300CC0D4B /* Socket */,
 			);
 			productName = "Sonos Controller WatchKit Extension";
 			productReference = C741ACFE259A5E9B00795B2B /* Sonos Controller WatchKit Extension.appex */;
@@ -314,8 +309,7 @@
 			);
 			mainGroup = C741ACE4259A5E9500795B2B;
 			packageReferences = (
-				C741AD5D259A6D9E00795B2B /* XCRemoteSwiftPackageReference "SwiftyXMLParser" */,
-				C7910AD7263B396800FA3F86 /* XCRemoteSwiftPackageReference "BlueSocket" */,
+				C75AB7A327B808F300CC0D4B /* XCRemoteSwiftPackageReference "BlueSocket" */,
 			);
 			productRefGroup = C741ACEC259A5E9500795B2B /* Products */;
 			projectDirPath = "";
@@ -370,7 +364,7 @@
 				C7AD5F6F2637065700710810 /* ControlsVC.swift in Sources */,
 				C7E8F3DF279EE38400436127 /* XMLElement.swift in Sources */,
 				C7AD3DBE25E2841500FED5C8 /* Errors.swift in Sources */,
-				C76417EE259D13B700034408 /* helper.swift in Sources */,
+				C76417EE259D13B700034408 /* Helper.swift in Sources */,
 				C7AD3DC325E2897600FED5C8 /* Service.swift in Sources */,
 				C7AD5F6A2637045300710810 /* ListController.swift in Sources */,
 				C7DC5A3227B0675F00EED85C /* GroupDevice.swift in Sources */,
@@ -679,33 +673,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C741AD5D259A6D9E00795B2B /* XCRemoteSwiftPackageReference "SwiftyXMLParser" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/yahoojapan/SwiftyXMLParser.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.3.0;
-			};
-		};
-		C7910AD7263B396800FA3F86 /* XCRemoteSwiftPackageReference "BlueSocket" */ = {
+		C75AB7A327B808F300CC0D4B /* XCRemoteSwiftPackageReference "BlueSocket" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Kitura/BlueSocket";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.200;
+				minimumVersion = 2.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C741AD5E259A6D9E00795B2B /* SwiftyXMLParser */ = {
+		C75AB7A427B808F300CC0D4B /* Socket */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C741AD5D259A6D9E00795B2B /* XCRemoteSwiftPackageReference "SwiftyXMLParser" */;
-			productName = SwiftyXMLParser;
-		};
-		C7910AD8263B396800FA3F86 /* Socket */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C7910AD7263B396800FA3F86 /* XCRemoteSwiftPackageReference "BlueSocket" */;
+			package = C75AB7A327B808F300CC0D4B /* XCRemoteSwiftPackageReference "BlueSocket" */;
 			productName = Socket;
 		};
 /* End XCSwiftPackageProductDependency section */

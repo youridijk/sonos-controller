@@ -7,7 +7,6 @@
 
 import WatchKit
 import Foundation
-import SwiftyXMLParser
 
 
 class ControlsVC: WKInterfaceController, WKCrownDelegate {
@@ -48,7 +47,6 @@ class ControlsVC: WKInterfaceController, WKCrownDelegate {
         
         if let device = context as? SonosUPnPClient.Device{
             selectedDevice = device
-            print("Selected device with name: \(device.displayName ?? "no name")")
             deviceNameButton.setTitle(device.displayName)
 //            self.isGroup = device.isGroup
             reloadDeviceData()

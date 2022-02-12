@@ -31,7 +31,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-575" y="64"/>
+            <point key="canvasLocation" x="-352" y="114"/>
         </scene>
         <!--Devices-->
         <scene sceneID="aou-V4-d1y">
@@ -182,94 +182,6 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="228" y="114"/>
-        </scene>
-        <!--Interface Controller-->
-        <scene sceneID="Ha6-qc-w1W">
-            <objects>
-                <controller id="HyD-KG-qfP">
-                    <items>
-                        <group width="1" height="1" alignment="center" layout="vertical" id="6bl-Oi-vHT">
-                            <items>
-                                <table alignment="center" id="H0Y-6B-bHx">
-                                    <items>
-                                        <tableRow identifier="DeviceRow" id="DCL-Ek-blT" customClass="DeviceRow" customModule="Sonos_Controller_WatchKit_Extension">
-                                            <group key="rootItem" width="1" alignment="left" id="y2j-iG-hw4">
-                                                <items>
-                                                    <label alignment="center" verticalAlignment="center" text="Keuken" id="lnq-ib-YHt"/>
-                                                </items>
-                                            </group>
-                                            <connections>
-                                                <outlet property="name" destination="lnq-ib-YHt" id="BIx-QL-CgS"/>
-                                            </connections>
-                                        </tableRow>
-                                    </items>
-                                </table>
-                                <group width="1" height="25" alignment="center" verticalAlignment="center" id="DnG-Da-1I5">
-                                    <items>
-                                        <button width="20" height="20" alignment="right" verticalAlignment="center" enabled="NO" backgroundImage="forward.end.fill" catalog="system" id="p7Y-1E-0Bc">
-                                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <connections>
-                                                <action selector="next:" destination="7BV-mY-4vR" id="EGX-ou-dUz"/>
-                                            </connections>
-                                        </button>
-                                        <button width="20" height="20" alignment="center" verticalAlignment="center" backgroundImage="play.fill" catalog="system" id="03V-ZM-cdn">
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <connections>
-                                                <action selector="playPause:" destination="7BV-mY-4vR" id="UjE-Uv-c96"/>
-                                            </connections>
-                                        </button>
-                                        <button width="20" height="20" alignment="center" verticalAlignment="center" hidden="YES" backgroundImage="pause.fill" catalog="system" id="rQm-9k-tdO">
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <connections>
-                                                <action selector="playPause:" destination="7BV-mY-4vR" id="AMF-tA-IOE"/>
-                                            </connections>
-                                        </button>
-                                        <button width="20" height="20" alignment="left" verticalAlignment="center" alpha="0.90000000000000002" enabled="NO" backgroundImage="backward.end.fill" catalog="system" id="ln0-9P-2oL">
-                                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <fontDescription key="font" type="system" pointSize="14"/>
-                                            <connections>
-                                                <action selector="previous:" destination="7BV-mY-4vR" id="1Cb-ri-7I3"/>
-                                            </connections>
-                                        </button>
-                                        <button width="20" height="20" alignment="center" verticalAlignment="center" hidden="YES" backgroundImage="stop.fill" catalog="system" id="Sg7-MM-RQL">
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <connections>
-                                                <action selector="stopPlaying:" destination="7BV-mY-4vR" id="XuA-b7-9Vv"/>
-                                            </connections>
-                                        </button>
-                                    </items>
-                                </group>
-                                <group width="1" alignment="left" verticalAlignment="bottom" id="Kew-9k-kgT">
-                                    <items>
-                                        <slider alignment="left" verticalAlignment="bottom" continuous="YES" value="1" maximum="50" steps="50" id="qEJ-RI-B0x">
-                                            <connections>
-                                                <action selector="didChange:" destination="7BV-mY-4vR" id="ljw-Hr-VsH"/>
-                                            </connections>
-                                        </slider>
-                                        <button width="25" height="25" alignment="right" verticalAlignment="center" hidden="YES" backgroundImage="speaker.slash.fill" catalog="system" id="0xa-WY-ZQg">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <connections>
-                                                <action selector="mute:" destination="7BV-mY-4vR" id="ibO-8g-NhY"/>
-                                            </connections>
-                                        </button>
-                                        <button width="25" height="25" alignment="right" verticalAlignment="center" backgroundImage="speaker.fill" catalog="system" id="241-YN-m98">
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <connections>
-                                                <action selector="mute:" destination="7BV-mY-4vR" id="5eb-9A-S6W"/>
-                                            </connections>
-                                        </button>
-                                    </items>
-                                </group>
-                            </items>
-                            <gestureRecognizers>
-                                <longPressGestureRecognizer minimumPressDuration="1" id="ZtS-dj-01N"/>
-                            </gestureRecognizers>
-                        </group>
-                    </items>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="480" y="-30"/>
         </scene>
     </scenes>
     <resources>

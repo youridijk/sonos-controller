@@ -1,0 +1,11 @@
+.idea
+*.cer
+icon-S14.png
+*.mobileprovision
+*.mp4
+*.request
+*.js
+Sonos Controller WatchKit Extension/ControlsVC OLD.swift 
+Sonos Controller WatchKit Extension/Test.swift
+Sonos Controller WatchKit Extension/TestController.swift
+Sonos Controller WatchKit Extension/xml test
