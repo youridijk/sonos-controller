@@ -1,0 +1,714 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C72569E925A2581A003E48FE /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72569E825A2581A003E48FE /* Test.swift */; };
+		C741ACF0259A5E9600795B2B /* Sonos Controller WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C741ACEF259A5E9600795B2B /* Sonos Controller WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C741ACF6259A5E9600795B2B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C741ACF4259A5E9600795B2B /* Interface.storyboard */; };
+		C741ACF8259A5E9B00795B2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C741ACF7259A5E9B00795B2B /* Assets.xcassets */; };
+		C741ACFF259A5E9B00795B2B /* Sonos Controller WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C741ACFE259A5E9B00795B2B /* Sonos Controller WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C741AD06259A5E9B00795B2B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C741AD05259A5E9B00795B2B /* ExtensionDelegate.swift */; };
+		C741AD08259A5E9B00795B2B /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C741AD07259A5E9B00795B2B /* ComplicationController.swift */; };
+		C741AD0A259A5E9D00795B2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C741AD09259A5E9D00795B2B /* Assets.xcassets */; };
+		C741AD5F259A6D9E00795B2B /* SwiftyXMLParser in Frameworks */ = {isa = PBXBuildFile; productRef = C741AD5E259A6D9E00795B2B /* SwiftyXMLParser */; };
+		C741AD64259A857300795B2B /* ControlsVC OLD.swift in Sources */ = {isa = PBXBuildFile; fileRef = C741AD63259A857300795B2B /* ControlsVC OLD.swift */; };
+		C76417EE259D13B700034408 /* helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76417ED259D13B700034408 /* helper.swift */; };
+		C787C0FC25A0D8A100EFF907 /* SonosUPnPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C787C0FB25A0D8A100EFF907 /* SonosUPnPClient.swift */; };
+		C7910AD9263B396800FA3F86 /* Socket in Frameworks */ = {isa = PBXBuildFile; productRef = C7910AD8263B396800FA3F86 /* Socket */; };
+		C7AD3DBE25E2841500FED5C8 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD3DBD25E2841500FED5C8 /* Errors.swift */; };
+		C7AD3DC325E2897600FED5C8 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD3DC225E2897600FED5C8 /* Service.swift */; };
+		C7AD3DC825E292BB00FED5C8 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD3DC725E292BB00FED5C8 /* Helper.swift */; };
+		C7AD5F6A2637045300710810 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD5F692637045300710810 /* ListController.swift */; };
+		C7AD5F6F2637065700710810 /* ControlsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD5F6E2637065700710810 /* ControlsVC.swift */; };
+		C7DC5A3027B026F100EED85C /* TestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DC5A2F27B026F100EED85C /* TestController.swift */; };
+		C7DC5A3227B0675F00EED85C /* GroupDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DC5A3127B0675F00EED85C /* GroupDevice.swift */; };
+		C7E8F3DD279EE1F900436127 /* CustomXMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E8F3DC279EE1F900436127 /* CustomXMLParser.swift */; };
+		C7E8F3DF279EE38400436127 /* XMLElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E8F3DE279EE38400436127 /* XMLElement.swift */; };
+		C7F4435125D6D94C001E045A /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F4435025D6D94C001E045A /* Device.swift */; };
+		C7F4435925D6D95E001E045A /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F4435825D6D95E001E045A /* Action.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C741ACF1259A5E9600795B2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C741ACE5259A5E9500795B2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C741ACEE259A5E9600795B2B;
+			remoteInfo = "Sonos Controller WatchKit App";
+		};
+		C741AD00259A5E9B00795B2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C741ACE5259A5E9500795B2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C741ACFD259A5E9B00795B2B;
+			remoteInfo = "Sonos Controller WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C72669A2264168C90007DFC8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C741AD11259A5E9D00795B2B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C741ACFF259A5E9B00795B2B /* Sonos Controller WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C741AD15259A5E9D00795B2B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C741ACF0259A5E9600795B2B /* Sonos Controller WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C72569E825A2581A003E48FE /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		C72B0758263F505000B81B71 /* Sonos Controller WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Sonos Controller WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		C741ACEB259A5E9500795B2B /* Sonos Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sonos Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C741ACEF259A5E9600795B2B /* Sonos Controller WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sonos Controller WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C741ACF5259A5E9600795B2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C741ACF7259A5E9B00795B2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C741ACF9259A5E9B00795B2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C741ACFE259A5E9B00795B2B /* Sonos Controller WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Sonos Controller WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C741AD05259A5E9B00795B2B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		C741AD07259A5E9B00795B2B /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		C741AD09259A5E9D00795B2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C741AD0B259A5E9D00795B2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C741AD63259A857300795B2B /* ControlsVC OLD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControlsVC OLD.swift"; sourceTree = "<group>"; };
+		C76417ED259D13B700034408 /* helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helper.swift; sourceTree = "<group>"; };
+		C787C0FB25A0D8A100EFF907 /* SonosUPnPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonosUPnPClient.swift; sourceTree = "<group>"; };
+		C7AD3DBD25E2841500FED5C8 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		C7AD3DC225E2897600FED5C8 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		C7AD3DC725E292BB00FED5C8 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		C7AD5F692637045300710810 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
+		C7AD5F6E2637065700710810 /* ControlsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsVC.swift; sourceTree = "<group>"; };
+		C7DC5A2F27B026F100EED85C /* TestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestController.swift; path = "Sonos Controller WatchKit Extension/TestController.swift"; sourceTree = SOURCE_ROOT; };
+		C7DC5A3127B0675F00EED85C /* GroupDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDevice.swift; sourceTree = "<group>"; };
+		C7E8F3DC279EE1F900436127 /* CustomXMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomXMLParser.swift; sourceTree = "<group>"; };
+		C7E8F3DE279EE38400436127 /* XMLElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLElement.swift; sourceTree = "<group>"; };
+		C7F4435025D6D94C001E045A /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		C7F4435825D6D95E001E045A /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BDF546FEAE46E7F5299EB28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0E684D12C5C51514F3D099C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C741ACFB259A5E9B00795B2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7910AD9263B396800FA3F86 /* Socket in Frameworks */,
+				C741AD5F259A6D9E00795B2B /* SwiftyXMLParser in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C741ACE4259A5E9500795B2B = {
+			isa = PBXGroup;
+			children = (
+				C741ACF3259A5E9600795B2B /* Sonos Controller WatchKit App */,
+				C741AD02259A5E9B00795B2B /* Sonos Controller WatchKit Extension */,
+				C741ACEC259A5E9500795B2B /* Products */,
+				C766F2C525D5CF04009B1976 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C741ACEC259A5E9500795B2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C741ACEB259A5E9500795B2B /* Sonos Controller.app */,
+				C741ACEF259A5E9600795B2B /* Sonos Controller WatchKit App.app */,
+				C741ACFE259A5E9B00795B2B /* Sonos Controller WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C741ACF3259A5E9600795B2B /* Sonos Controller WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				C741ACF4259A5E9600795B2B /* Interface.storyboard */,
+				C741ACF7259A5E9B00795B2B /* Assets.xcassets */,
+				C741ACF9259A5E9B00795B2B /* Info.plist */,
+			);
+			path = "Sonos Controller WatchKit App";
+			sourceTree = "<group>";
+		};
+		C741AD02259A5E9B00795B2B /* Sonos Controller WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C7E8F3D6279EE1BA00436127 /* xml tet */,
+				C72B0758263F505000B81B71 /* Sonos Controller WatchKit Extension.entitlements */,
+				C7F4434C25D6D92F001E045A /* client */,
+				C7AD5F692637045300710810 /* ListController.swift */,
+				C741AD63259A857300795B2B /* ControlsVC OLD.swift */,
+				C7AD5F6E2637065700710810 /* ControlsVC.swift */,
+				C76417ED259D13B700034408 /* helper.swift */,
+				C72569E825A2581A003E48FE /* Test.swift */,
+				C741AD05259A5E9B00795B2B /* ExtensionDelegate.swift */,
+				C741AD07259A5E9B00795B2B /* ComplicationController.swift */,
+				C741AD09259A5E9D00795B2B /* Assets.xcassets */,
+				C741AD0B259A5E9D00795B2B /* Info.plist */,
+			);
+			path = "Sonos Controller WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		C766F2C525D5CF04009B1976 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7E8F3D6279EE1BA00436127 /* xml tet */ = {
+			isa = PBXGroup;
+			children = (
+				C7E8F3DC279EE1F900436127 /* CustomXMLParser.swift */,
+				C7E8F3DE279EE38400436127 /* XMLElement.swift */,
+				C7DC5A2F27B026F100EED85C /* TestController.swift */,
+			);
+			path = "xml tet";
+			sourceTree = "<group>";
+		};
+		C7F4434C25D6D92F001E045A /* client */ = {
+			isa = PBXGroup;
+			children = (
+				C787C0FB25A0D8A100EFF907 /* SonosUPnPClient.swift */,
+				C7F4435025D6D94C001E045A /* Device.swift */,
+				C7F4435825D6D95E001E045A /* Action.swift */,
+				C7AD3DBD25E2841500FED5C8 /* Errors.swift */,
+				C7AD3DC225E2897600FED5C8 /* Service.swift */,
+				C7AD3DC725E292BB00FED5C8 /* Helper.swift */,
+				C7DC5A3127B0675F00EED85C /* GroupDevice.swift */,
+			);
+			path = client;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C741ACEA259A5E9500795B2B /* Sonos Controller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C741AD16259A5E9D00795B2B /* Build configuration list for PBXNativeTarget "Sonos Controller" */;
+			buildPhases = (
+				C741ACE9259A5E9500795B2B /* Resources */,
+				C741AD15259A5E9D00795B2B /* Embed Watch Content */,
+				3BDF546FEAE46E7F5299EB28 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C741ACF2259A5E9600795B2B /* PBXTargetDependency */,
+			);
+			name = "Sonos Controller";
+			packageProductDependencies = (
+			);
+			productName = "Sonos Controller";
+			productReference = C741ACEB259A5E9500795B2B /* Sonos Controller.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		C741ACEE259A5E9600795B2B /* Sonos Controller WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C741AD12259A5E9D00795B2B /* Build configuration list for PBXNativeTarget "Sonos Controller WatchKit App" */;
+			buildPhases = (
+				C741ACED259A5E9600795B2B /* Resources */,
+				C741AD11259A5E9D00795B2B /* Embed App Extensions */,
+				A0E684D12C5C51514F3D099C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C741AD01259A5E9B00795B2B /* PBXTargetDependency */,
+			);
+			name = "Sonos Controller WatchKit App";
+			productName = "Sonos Controller WatchKit App";
+			productReference = C741ACEF259A5E9600795B2B /* Sonos Controller WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C741ACFD259A5E9B00795B2B /* Sonos Controller WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C741AD0E259A5E9D00795B2B /* Build configuration list for PBXNativeTarget "Sonos Controller WatchKit Extension" */;
+			buildPhases = (
+				C741ACFA259A5E9B00795B2B /* Sources */,
+				C741ACFB259A5E9B00795B2B /* Frameworks */,
+				C741ACFC259A5E9B00795B2B /* Resources */,
+				C72669A2264168C90007DFC8 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sonos Controller WatchKit Extension";
+			packageProductDependencies = (
+				C741AD5E259A6D9E00795B2B /* SwiftyXMLParser */,
+				C7910AD8263B396800FA3F86 /* Socket */,
+			);
+			productName = "Sonos Controller WatchKit Extension";
+			productReference = C741ACFE259A5E9B00795B2B /* Sonos Controller WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C741ACE5259A5E9500795B2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					C741ACEA259A5E9500795B2B = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					C741ACEE259A5E9600795B2B = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					C741ACFD259A5E9B00795B2B = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = C741ACE8259A5E9500795B2B /* Build configuration list for PBXProject "Sonos Controller" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C741ACE4259A5E9500795B2B;
+			packageReferences = (
+				C741AD5D259A6D9E00795B2B /* XCRemoteSwiftPackageReference "SwiftyXMLParser" */,
+				C7910AD7263B396800FA3F86 /* XCRemoteSwiftPackageReference "BlueSocket" */,
+			);
+			productRefGroup = C741ACEC259A5E9500795B2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C741ACEA259A5E9500795B2B /* Sonos Controller */,
+				C741ACEE259A5E9600795B2B /* Sonos Controller WatchKit App */,
+				C741ACFD259A5E9B00795B2B /* Sonos Controller WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C741ACE9259A5E9500795B2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C741ACED259A5E9600795B2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C741ACF8259A5E9B00795B2B /* Assets.xcassets in Resources */,
+				C741ACF6259A5E9600795B2B /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C741ACFC259A5E9B00795B2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C741AD0A259A5E9D00795B2B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C741ACFA259A5E9B00795B2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C741AD64259A857300795B2B /* ControlsVC OLD.swift in Sources */,
+				C7F4435925D6D95E001E045A /* Action.swift in Sources */,
+				C741AD06259A5E9B00795B2B /* ExtensionDelegate.swift in Sources */,
+				C7DC5A3027B026F100EED85C /* TestController.swift in Sources */,
+				C7E8F3DD279EE1F900436127 /* CustomXMLParser.swift in Sources */,
+				C787C0FC25A0D8A100EFF907 /* SonosUPnPClient.swift in Sources */,
+				C72569E925A2581A003E48FE /* Test.swift in Sources */,
+				C7AD5F6F2637065700710810 /* ControlsVC.swift in Sources */,
+				C7E8F3DF279EE38400436127 /* XMLElement.swift in Sources */,
+				C7AD3DBE25E2841500FED5C8 /* Errors.swift in Sources */,
+				C76417EE259D13B700034408 /* helper.swift in Sources */,
+				C7AD3DC325E2897600FED5C8 /* Service.swift in Sources */,
+				C7AD5F6A2637045300710810 /* ListController.swift in Sources */,
+				C7DC5A3227B0675F00EED85C /* GroupDevice.swift in Sources */,
+				C741AD08259A5E9B00795B2B /* ComplicationController.swift in Sources */,
+				C7F4435125D6D94C001E045A /* Device.swift in Sources */,
+				C7AD3DC825E292BB00FED5C8 /* Helper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C741ACF2259A5E9600795B2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C741ACEE259A5E9600795B2B /* Sonos Controller WatchKit App */;
+			targetProxy = C741ACF1259A5E9600795B2B /* PBXContainerItemProxy */;
+		};
+		C741AD01259A5E9B00795B2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C741ACFD259A5E9B00795B2B /* Sonos Controller WatchKit Extension */;
+			targetProxy = C741AD00259A5E9B00795B2B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C741ACF4259A5E9600795B2B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C741ACF5259A5E9600795B2B /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C741AD0C259A5E9D00795B2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C741AD0D259A5E9D00795B2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C741AD0F259A5E9D00795B2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Sonos Controller WatchKit Extension/Sonos Controller WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_TEAM = 4VTB4459DD;
+				INFOPLIST_FILE = "Sonos Controller WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.youridijk.SonosController.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		C741AD10259A5E9D00795B2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Sonos Controller WatchKit Extension/Sonos Controller WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_TEAM = 4VTB4459DD;
+				INFOPLIST_FILE = "Sonos Controller WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.youridijk.SonosController.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		C741AD13259A5E9D00795B2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_TEAM = 4VTB4459DD;
+				IBSC_MODULE = Sonos_Controller_WatchKit_Extension;
+				INFOPLIST_FILE = "Sonos Controller WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youridijk.SonosController.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		C741AD14259A5E9D00795B2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_TEAM = 4VTB4459DD;
+				IBSC_MODULE = Sonos_Controller_WatchKit_Extension;
+				INFOPLIST_FILE = "Sonos Controller WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youridijk.SonosController.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		C741AD17259A5E9D00795B2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_TEAM = 4VTB4459DD;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.youridijk.SonosController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C741AD18259A5E9D00795B2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_TEAM = 4VTB4459DD;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.youridijk.SonosController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C741ACE8259A5E9500795B2B /* Build configuration list for PBXProject "Sonos Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C741AD0C259A5E9D00795B2B /* Debug */,
+				C741AD0D259A5E9D00795B2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C741AD0E259A5E9D00795B2B /* Build configuration list for PBXNativeTarget "Sonos Controller WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C741AD0F259A5E9D00795B2B /* Debug */,
+				C741AD10259A5E9D00795B2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C741AD12259A5E9D00795B2B /* Build configuration list for PBXNativeTarget "Sonos Controller WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C741AD13259A5E9D00795B2B /* Debug */,
+				C741AD14259A5E9D00795B2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C741AD16259A5E9D00795B2B /* Build configuration list for PBXNativeTarget "Sonos Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C741AD17259A5E9D00795B2B /* Debug */,
+				C741AD18259A5E9D00795B2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C741AD5D259A6D9E00795B2B /* XCRemoteSwiftPackageReference "SwiftyXMLParser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yahoojapan/SwiftyXMLParser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.0;
+			};
+		};
+		C7910AD7263B396800FA3F86 /* XCRemoteSwiftPackageReference "BlueSocket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Kitura/BlueSocket";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.200;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C741AD5E259A6D9E00795B2B /* SwiftyXMLParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C741AD5D259A6D9E00795B2B /* XCRemoteSwiftPackageReference "SwiftyXMLParser" */;
+			productName = SwiftyXMLParser;
+		};
+		C7910AD8263B396800FA3F86 /* Socket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7910AD7263B396800FA3F86 /* XCRemoteSwiftPackageReference "BlueSocket" */;
+			productName = Socket;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C741ACE5259A5E9500795B2B /* Project object */;
+}

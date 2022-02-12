@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="19529" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="19514"/>
+    </dependencies>
+    <scenes>
+        <!--Test Controller-->
+        <scene sceneID="hON-8k-Aan">
+            <objects>
+                <controller id="8wj-us-WPm" customClass="TestController" customModule="Sonos_Controller_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Server" id="AJS-pw-7Fk">
+                            <connections>
+                                <action selector="test:" destination="8wj-us-WPm" id="Pzg-fr-WEM"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Send listen" id="0Td-uB-CBI">
+                            <connections>
+                                <action selector="test2:" destination="8wj-us-WPm" id="xp1-RI-caX"/>
+                            </connections>
+                        </button>
+                        <label alignment="center" numberOfLines="0" id="3Wl-tJ-Kej"/>
+                        <label alignment="center" numberOfLines="0" id="4pJ-14-Cne"/>
+                    </items>
+                    <connections>
+                        <outlet property="label" destination="3Wl-tJ-Kej" id="5rK-Zf-cYw"/>
+                        <outlet property="label2" destination="4pJ-14-Cne" id="xby-ps-VSD"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-575" y="64"/>
+        </scene>
+        <!--Devices-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="Devices" id="AgC-eL-Hgc" customClass="ListController" customModule="Sonos_Controller_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="ynF-63-RP1">
+                            <items>
+                                <button width="1" alignment="left" title="Herlaad" id="rJG-zf-WiN">
+                                    <connections>
+                                        <action selector="longPress:" destination="AgC-eL-Hgc" id="5dA-le-ORp"/>
+                                    </connections>
+                                </button>
+                                <separator alignment="center" id="Ncg-3G-Phf"/>
+                                <group width="1" height="1" alignment="left" layout="vertical" id="qIg-gr-dUh">
+                                    <items>
+                                        <table alignment="center" semanticContentAttribute="playback" pagingScroll="YES" id="PxH-zU-MYF">
+                                            <items>
+                                                <tableRow identifier="DeviceRow" id="uow-16-yes" customClass="DeviceRow" customModule="Sonos_Controller_WatchKit_Extension">
+                                                    <group key="rootItem" width="1" alignment="left" id="Ipd-vr-WiR">
+                                                        <items>
+                                                            <label alignment="center" verticalAlignment="center" text="Woonkamer" baselineAdjustment="alignCenters" id="5l5-VB-nNn"/>
+                                                        </items>
+                                                    </group>
+                                                    <connections>
+                                                        <outlet property="name" destination="5l5-VB-nNn" id="uvJ-Hw-6e6"/>
+                                                    </connections>
+                                                </tableRow>
+                                            </items>
+                                        </table>
+                                    </items>
+                                    <gestureRecognizers>
+                                        <longPressGestureRecognizer minimumPressDuration="2" id="gmw-8i-o0S">
+                                            <connections>
+                                                <action selector="longPress:" destination="AgC-eL-Hgc" id="Wdt-V7-iOk"/>
+                                            </connections>
+                                        </longPressGestureRecognizer>
+                                    </gestureRecognizers>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="PxH-zU-MYF" id="tSW-TA-Z3g"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-50" y="114"/>
+        </scene>
+        <!--ControlsVC-->
+        <scene sceneID="H7v-GK-dPy">
+            <objects>
+                <controller identifier="ControlsVC" title="ControlsVC" id="7BV-mY-4vR" customClass="ControlsVC" customModule="Sonos_Controller_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="1" alignment="center" layout="vertical" id="a7R-tV-fTW">
+                            <items>
+                                <button width="1" alignment="left" title="Keuken" id="5OH-ce-7J6" userLabel="DeviceName">
+                                    <connections>
+                                        <action selector="reloadDeviceData:" destination="7BV-mY-4vR" id="DKe-9u-po5"/>
+                                    </connections>
+                                </button>
+                                <group width="1" alignment="left" id="FfF-0r-7pj">
+                                    <items>
+                                        <label alignment="left" id="CaN-aH-zJd">
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="1" height="25" alignment="center" verticalAlignment="center" id="fun-Vq-LO4">
+                                    <items>
+                                        <button width="0.17000000000000001" height="1" alignment="right" verticalAlignment="center" enabled="NO" backgroundImage="forward.end.fill" catalog="system" id="LD3-bg-FZ9">
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="next:" destination="7BV-mY-4vR" id="bD5-Rw-gIs"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.16" height="1" alignment="center" verticalAlignment="center" enabled="NO" backgroundImage="play.fill" catalog="system" id="Bsc-Q8-k3G">
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="playPause:" destination="7BV-mY-4vR" id="DTn-ck-NTp"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.17000000000000001" height="1" alignment="center" verticalAlignment="center" hidden="YES" enabled="NO" backgroundImage="pause.fill" catalog="system" id="Xjf-mL-hd5">
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="playPause:" destination="7BV-mY-4vR" id="1jf-0M-hzP"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.17000000000000001" height="1" alignment="left" verticalAlignment="center" alpha="0.90000000000000002" enabled="NO" backgroundImage="backward.end.fill" catalog="system" id="UDK-Zj-L42">
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="font" type="system" pointSize="14"/>
+                                            <connections>
+                                                <action selector="previous:" destination="7BV-mY-4vR" id="rTL-XX-0D5"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.16" height="1" alignment="center" verticalAlignment="center" hidden="YES" enabled="NO" backgroundImage="stop.fill" catalog="system" id="Efz-ak-QoV">
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="stopPlaying:" destination="7BV-mY-4vR" id="L3h-4F-1Ez"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="center" verticalAlignment="bottom" id="30v-E6-SqE">
+                                    <items>
+                                        <slider alignment="left" verticalAlignment="bottom" continuous="YES" value="1" maximum="50" steps="50" id="HpH-Jq-zcm">
+                                            <connections>
+                                                <action selector="didChange:" destination="7BV-mY-4vR" id="h9b-q8-B5Y"/>
+                                            </connections>
+                                        </slider>
+                                        <button width="25" height="25" alignment="right" verticalAlignment="center" hidden="YES" backgroundImage="speaker.slash.fill" catalog="system" id="tzE-yn-G8e">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="mute:" destination="7BV-mY-4vR" id="wuP-YS-mJ0"/>
+                                            </connections>
+                                        </button>
+                                        <button width="25" height="25" alignment="right" verticalAlignment="center" backgroundImage="speaker.fill" catalog="system" id="IXO-Gn-gAK">
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="mute:" destination="7BV-mY-4vR" id="oL8-ke-eI2"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                            <gestureRecognizers>
+                                <longPressGestureRecognizer enabled="NO" minimumPressDuration="1" id="wCH-EM-bKE">
+                                    <connections>
+                                        <action selector="reloadDeviceData:" destination="7BV-mY-4vR" id="wSq-bG-dTq"/>
+                                    </connections>
+                                </longPressGestureRecognizer>
+                            </gestureRecognizers>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="deviceNameButton" destination="5OH-ce-7J6" id="OWt-d2-QyD"/>
+                        <outlet property="muteButton" destination="IXO-Gn-gAK" id="nZc-ci-nUa"/>
+                        <outlet property="nextButton" destination="LD3-bg-FZ9" id="Zfe-X5-AK9"/>
+                        <outlet property="nowPlaying" destination="CaN-aH-zJd" id="Gpi-pB-037"/>
+                        <outlet property="pauseButton" destination="Xjf-mL-hd5" id="ibb-K6-Dhj"/>
+                        <outlet property="playButton" destination="Bsc-Q8-k3G" id="hZU-iu-aQr"/>
+                        <outlet property="previousButton" destination="UDK-Zj-L42" id="8IS-ei-JL2"/>
+                        <outlet property="slider" destination="HpH-Jq-zcm" id="mQe-HR-V4O"/>
+                        <outlet property="stopButton" destination="Efz-ak-QoV" id="52H-zl-tOM"/>
+                        <outlet property="unMuteButton" destination="tzE-yn-G8e" id="zhF-Va-WAT"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="228" y="114"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="Ha6-qc-w1W">
+            <objects>
+                <controller id="HyD-KG-qfP">
+                    <items>
+                        <group width="1" height="1" alignment="center" layout="vertical" id="6bl-Oi-vHT">
+                            <items>
+                                <table alignment="center" id="H0Y-6B-bHx">
+                                    <items>
+                                        <tableRow identifier="DeviceRow" id="DCL-Ek-blT" customClass="DeviceRow" customModule="Sonos_Controller_WatchKit_Extension">
+                                            <group key="rootItem" width="1" alignment="left" id="y2j-iG-hw4">
+                                                <items>
+                                                    <label alignment="center" verticalAlignment="center" text="Keuken" id="lnq-ib-YHt"/>
+                                                </items>
+                                            </group>
+                                            <connections>
+                                                <outlet property="name" destination="lnq-ib-YHt" id="BIx-QL-CgS"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                                <group width="1" height="25" alignment="center" verticalAlignment="center" id="DnG-Da-1I5">
+                                    <items>
+                                        <button width="20" height="20" alignment="right" verticalAlignment="center" enabled="NO" backgroundImage="forward.end.fill" catalog="system" id="p7Y-1E-0Bc">
+                                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="next:" destination="7BV-mY-4vR" id="EGX-ou-dUz"/>
+                                            </connections>
+                                        </button>
+                                        <button width="20" height="20" alignment="center" verticalAlignment="center" backgroundImage="play.fill" catalog="system" id="03V-ZM-cdn">
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="playPause:" destination="7BV-mY-4vR" id="UjE-Uv-c96"/>
+                                            </connections>
+                                        </button>
+                                        <button width="20" height="20" alignment="center" verticalAlignment="center" hidden="YES" backgroundImage="pause.fill" catalog="system" id="rQm-9k-tdO">
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="playPause:" destination="7BV-mY-4vR" id="AMF-tA-IOE"/>
+                                            </connections>
+                                        </button>
+                                        <button width="20" height="20" alignment="left" verticalAlignment="center" alpha="0.90000000000000002" enabled="NO" backgroundImage="backward.end.fill" catalog="system" id="ln0-9P-2oL">
+                                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="font" type="system" pointSize="14"/>
+                                            <connections>
+                                                <action selector="previous:" destination="7BV-mY-4vR" id="1Cb-ri-7I3"/>
+                                            </connections>
+                                        </button>
+                                        <button width="20" height="20" alignment="center" verticalAlignment="center" hidden="YES" backgroundImage="stop.fill" catalog="system" id="Sg7-MM-RQL">
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="stopPlaying:" destination="7BV-mY-4vR" id="XuA-b7-9Vv"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" verticalAlignment="bottom" id="Kew-9k-kgT">
+                                    <items>
+                                        <slider alignment="left" verticalAlignment="bottom" continuous="YES" value="1" maximum="50" steps="50" id="qEJ-RI-B0x">
+                                            <connections>
+                                                <action selector="didChange:" destination="7BV-mY-4vR" id="ljw-Hr-VsH"/>
+                                            </connections>
+                                        </slider>
+                                        <button width="25" height="25" alignment="right" verticalAlignment="center" hidden="YES" backgroundImage="speaker.slash.fill" catalog="system" id="0xa-WY-ZQg">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="mute:" destination="7BV-mY-4vR" id="ibO-8g-NhY"/>
+                                            </connections>
+                                        </button>
+                                        <button width="25" height="25" alignment="right" verticalAlignment="center" backgroundImage="speaker.fill" catalog="system" id="241-YN-m98">
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="mute:" destination="7BV-mY-4vR" id="5eb-9A-S6W"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                            <gestureRecognizers>
+                                <longPressGestureRecognizer minimumPressDuration="1" id="ZtS-dj-01N"/>
+                            </gestureRecognizers>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="480" y="-30"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backward.end.fill" catalog="system" width="128" height="101"/>
+        <image name="forward.end.fill" catalog="system" width="128" height="101"/>
+        <image name="pause.fill" catalog="system" width="119" height="128"/>
+        <image name="play.fill" catalog="system" width="115" height="128"/>
+        <image name="speaker.fill" catalog="system" width="128" height="128"/>
+        <image name="speaker.slash.fill" catalog="system" width="124" height="128"/>
+        <image name="stop.fill" catalog="system" width="128" height="112"/>
+    </resources>
+</document>
